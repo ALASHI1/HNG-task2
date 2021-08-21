@@ -17,7 +17,7 @@ input[type="submit"] {
     height: 50px;
     border: none;
     border-radius: 8px;
-    margin-left: 390px;
+    margin-left: 410px;
     background: #0040ff;
     color: white;
     font-size: 20px;
@@ -41,7 +41,6 @@ input#id_name {
     border: solid 1pt;
     height: 50px;
     border-radius: 10px;
-    margin-left: 19px;
     /* border: none; */
 }
 label#id_purpose {

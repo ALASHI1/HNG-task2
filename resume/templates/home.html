@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Resume Home</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<style type="text/css">
+#id_purpose {
+	vertical-align: -70px;}
+</style>
+<body>
+	<img src="https://hng.tech/img/brand-logo.png" alt="" />
+<center><h1>ALASHI MUYIWA</h1></center>
+<center><h4>+2347050948905 /<a href="mailto:alashimuyiwa@gmail.com">alashimuyiwa@gmail.com</a> </h4></center>
+<a href="https://www.linkedin.com/in/alashimuyiwa"><center><h4>www.linkedin.com/in/alashimuyiwa</h4></center></a>
+<hr>
+<main>
+<div>
+	<h2>Profile</h2>
+	<p>Full-stack Django web developer providing outreach and information sharing solutions to get people one step closer to their goal with my ability to increase efficiency by finding faults and providing solutions</p>
+</div>
+
+<div>
+	<h2>Skills</h2>
+	<div>
+		<ul>
+			<li>Django</li>
+			<li>AWS S3</li>
+			<li>Python</li>
+			<li>AWS Elastic Beanstalk</li>
+			<li>Bootstrap</li>
+			<li>Heroku</li>
+			<li>Django Rest Framework</li>
+			<li>MongoDB</li>
+			<li>HTML</li>
+			<li>PostgreSQL</li>
+			<li>CSS</li>
+			<li>Git/Github</li>
+			<li>Javascript</li>
+			<li>SQLlite</li>
+		</ul>
+	</div>
+</div>
+
+
+<div>
+	<h2>Relevant Projects </h2>
+	<ul>
+	<li><p><strong>Itadakimasu</strong>- Spearheaded A full-stack culinary based website made with a Django and PostgreSQL back-end and a bootstrap theme template for the front-end that integrates an external API and provides recipes, Images, lists equipments needed and provides food suggestions for its users</p>
+	</li>
+	<li><p><strong>Card maker app</strong>- Co-developed a full-stack holiday card gifting web application that allows users to gift loved ones holiday cards with a team of gifted developers at a MLH Hackathon event,</p>
+	</li>
+	<li><p><strong>Goldendawn blog app</strong>- Created a Django based blog app that allows user to post stories and read stories from other users as well, integrated various technologies and libraries like AWS s3, Summer-text editor, Mailchimp, Bootstrap</p>
+	</li>
+	</ul>
+</div>
+
+<div>
+	<h2>Education</h2>
+	<p style="font-size: 30px;">University of Lagos</p>
+	<p style="margin-top: -14px;
+    margin-left: 37px;">Bsc systems engineering <br/>
+		Expected graduation - 2025</p>
+</div>
+
+<div>
+	<h2>Certification</h2>
+	<p>Udemy Python 3 course (2021)</p>
+<p>Linkedin Become a Django Developer </p>
+</div>
+</main>
+<hr>
+<div>
+	<h1 style="margin-left: 15px;
+    font-size: 45px;">Contact me</h1>
+	<form method="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<input type="submit" name="">
+	</form>
+</div>
+
+
+
+</body>
+</html>
