@@ -9,6 +9,7 @@ def index(request):
 			form.save()
 			return render(request,'thanks.html',{'form':form})
 	else:
-     
 		form = ContactForm()
+  
+  
 	return render(request,'index.html',{'form':form})
