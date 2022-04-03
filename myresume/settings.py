@@ -60,9 +60,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-# SECURE_SSL_REDIRECT = True
-
 ROOT_URLCONF = 'myresume.urls'
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -98,9 +95,9 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
-DATABASES = {
-  'default': dj_database_url.config(conn_max_age=600)
-}
+# DATABASES = {
+#   'default': dj_database_url.config(conn_max_age=600)
+# }
 
 
 # Password validation
