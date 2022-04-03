@@ -87,15 +87,15 @@ WSGI_APPLICATION = 'myresume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'myresume',
-#         'USER': 'myresumeuser',
-#         'PASSWORD': 'myresume',
-#         'HOST': 'localhost'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'myresume',
+        'USER': 'myresumeuser',
+        'PASSWORD': 'myresume',
+        'HOST': 'localhost'
+    }
+}
 DATABASES = {
   'default': dj_database_url.config(conn_max_age=600)
 }
