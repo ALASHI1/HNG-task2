@@ -17,3 +17,7 @@ media
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
