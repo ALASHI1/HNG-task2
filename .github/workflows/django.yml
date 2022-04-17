@@ -30,15 +30,14 @@ jobs:
       run: |
         pip install black
         black resume
-
-    # - name: Generate deployment package
-    #   run: zip -r deploy.zip . -x '*.git*'
     - name: Get current time
       uses: srfrnk/current-time@master
       id: current-time
       with:
         format: YYYYMMDD
-    run: echo ${{ steps.timestamp.outputs.date }}
+    - name: time
+      run: echo ${{ steps.timestamp.outputs.date }}
+    
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
       with:
