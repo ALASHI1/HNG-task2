@@ -30,13 +30,6 @@ jobs:
       run: |
         pip install black
         black resume
-    - name: Get current time
-      uses: srfrnk/current-time@master
-      id: current-time
-      with:
-        format: YYYYMMDD
-    - name: time
-      run: echo "${{ steps.timestamp.outputs.date }}"
     
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
@@ -45,8 +38,9 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: app-resume
         environment_name: Retask-env
-        version_label: "${{ steps.timestamp.outputs.date }}"
+        version_label: ${{github.run_number}}
         region: us-west-2
+        use_existing_version_if_available: true
 #     - name: Run Tests
 #       run: |
 #         python manage.py test
