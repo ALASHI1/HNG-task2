@@ -38,7 +38,7 @@ jobs:
       id: current-time
       with:
         format: YYYYMMDD
-      run: echo ${{ steps.timestamp.outputs.date }}
+    run: echo ${{ steps.timestamp.outputs.date }}
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
       with:
