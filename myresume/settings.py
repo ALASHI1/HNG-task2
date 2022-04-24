@@ -32,7 +32,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = ['www.alashimuyiwa.tech','alashimuyiwa.tech','18.133.79.47','http://alashimuyiwaresume.herokuapp.com',
+ALLOWED_HOSTS = ['www.alashimuyiwa.tech','alashimuyiwa.tech','alashimuyiwaresume.herokuapp.com','http://alashimuyiwaresume.herokuapp.com',
                  'http://alashimuyiwaresume.herokuapp.com/','https://alashimuyiwaresume.herokuapp.com/',
                  'localhost','127.0.0.1',"retask-env.eba-hcmihc8p.us-west-2.elasticbeanstalk.com"]
 
