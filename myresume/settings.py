@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['www.alashimuyiwa.tech','alashimuyiwa.tech','alashimuyiwaresume
                  'localhost','127.0.0.1',"retask-env.eba-hcmihc8p.us-west-2.elasticbeanstalk.com"]
 
 # CORS_REPLACE_HTTPS_REFERER      = False
-# HOST_SCHEME                     = "http://"
+HOST_SCHEME                     = "https://"
 # SECURE_PROXY_SSL_HEADER         = None
 # SECURE_SSL_REDIRECT             = False
 # SESSION_COOKIE_SECURE           = False
