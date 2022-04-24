@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['18.133.79.47','http://alashimuyiwaresume.herokuapp.com',
                  'http://alashimuyiwaresume.herokuapp.com/','https://alashimuyiwaresume.herokuapp.com/',
-                 'localhost','127.0.0.1',"retask-env.eba-hcmihc8p.us-west-2.elasticbeanstalk.com"]
+                 'localhost','127.0.0.1',"retask-env.eba-hcmihc8p.us-west-2.elasticbeanstalk.com,www.alashimuyiwa.tech"]
 
 # CORS_REPLACE_HTTPS_REFERER      = False
 # HOST_SCHEME                     = "http://"
