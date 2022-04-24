@@ -30,7 +30,18 @@ jobs:
       run: |
         pip install black
         black resume
+
     
+    - name: Deploy to heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "alashimuyiwaresume"
+          heroku_email: "muyoskid2@gmail.com"
+
+
+
+
 #     - name: Generate deployment package
 #       run: zip -r qdeploy.zip . -x '*.git*'
     
