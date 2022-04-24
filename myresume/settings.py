@@ -130,7 +130,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
